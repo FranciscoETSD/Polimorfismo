@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        /*
         //polimorfismo
         Producto producto = new Producto("G128","Genius G128+");
 
@@ -24,7 +25,14 @@ public class Main {
 
         for (int i = 0; i < productos.length; i++) {
             System.out.println(productos[i]);
+        */
+
+        Monitor lg1080 = new Monitor("lg1080","Monitor LG 1080+",10,"4K");
+        lg1080.reset();
+
+        DiscoDuro s1000 = new DiscoDuro("s1000","Samsung s1000",20,1000);
+        s1000.reset();
 
         }
     }
-}
+

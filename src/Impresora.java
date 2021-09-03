@@ -1,4 +1,6 @@
-public class Impresora extends Producto {
+import interfaces.IReseteable;
+
+public class Impresora extends Producto implements IReseteable {
     private int velocidad;
 
     @Override
@@ -14,5 +16,10 @@ public class Impresora extends Producto {
     public Impresora(String codigo, String modelo, int velocidad) {
         super(codigo, modelo);
         this.velocidad = velocidad;
+    }
+
+    @Override
+    public void reset() {
+        System.out.println("Reseteando impresora...");
     }
 }

@@ -1,4 +1,6 @@
-public class Monitor  extends Alquilable{
+import interfaces.IReseteable;
+
+public class Monitor  extends Alquilable implements IReseteable {
     private String resolucionMaxima;
 
     public Monitor(String codigo, String modelo, double precioHora, String resolucionMaxima) {
@@ -14,5 +16,10 @@ public class Monitor  extends Alquilable{
                 ", codigo='" + codigo + '\'' +
                 ", modelo='" + modelo + '\'' +
                 '}';
+    }
+
+    @Override
+    public void reset() {
+        System.out.println("Reseteando Monitor...");
     }
 }
