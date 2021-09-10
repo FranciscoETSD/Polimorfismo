@@ -19,6 +19,11 @@ public class DiscoDuro extends Alquilable implements IReseteable {
     }
 
     @Override
+    public void estado() {
+        System.out.println("Sectores defectuosos: " + 1420);
+    }
+
+    @Override
     public void reset() {
         System.out.println("Formateando Disco duro...");
     }

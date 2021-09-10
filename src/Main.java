@@ -29,10 +29,11 @@ public class Main {
 
         Monitor lg1080 = new Monitor("lg1080","Monitor LG 1080+",10,"4K");
         lg1080.reset();
+        lg1080.estado();
 
         DiscoDuro s1000 = new DiscoDuro("s1000","Samsung s1000",20,1000);
         s1000.reset();
-
+        s1000.estado();
         }
     }
 

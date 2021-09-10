@@ -13,6 +13,11 @@ public class Impresora extends Producto implements IReseteable {
 
     }
 
+    @Override
+    public void estado() {
+        System.out.println("Paginas impresas: " + 152400);
+    }
+
     public Impresora(String codigo, String modelo, int velocidad) {
         super(codigo, modelo);
         this.velocidad = velocidad;

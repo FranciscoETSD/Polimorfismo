@@ -1,6 +1,6 @@
 import java.util.Date;
 
- class Tecnologico extends Producto {
+  public abstract class Tecnologico extends Producto {
     protected String PaisOrigen;
     protected Date FechaFabricacion;
     protected Empresa Fabricante;
